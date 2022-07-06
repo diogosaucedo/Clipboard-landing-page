@@ -1,0 +1,30 @@
+@use "../base/extends";
+@use "../base/colors";
+
+.c-list {
+  @extend %u-display-flex,
+    %u-direction-column,
+    %u-flex-wrap,
+    %u-justify-space-between;
+
+  list-style: none;
+  font-size: 1.8rem;
+
+  &__item {
+    padding: 0.5rem 0;
+    width: 15rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: colors.$dark-grayish-blue;
+
+    &:visited {
+      color: colors.$dark-grayish-blue;
+    }
+
+    &:active {
+      color: colors.$strong-cyan;
+    }
+  }
+}

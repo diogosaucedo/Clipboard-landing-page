@@ -1,0 +1,23 @@
+@use "../base/extends";
+@use "../base/colors";
+
+.l-footer {
+  @extend %u-display-flex, %u-justify-space-between;
+
+  margin-top: 15rem;
+  padding: 4rem 17rem;
+  width: 100%;
+  height: 15rem;
+
+  // The color provided is different from the design color
+  background-color: lighten(colors.$grayish-blue, 25%);
+
+  &__left {
+    @extend %u-display-flex, %u-justify-space-between;
+    width: 35rem;
+  }
+
+  .c-logo__image {
+    width: 6rem;
+  }
+}

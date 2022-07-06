@@ -1,0 +1,12 @@
+@use "../base/extends";
+
+.l-features {
+  @extend %u-display-flex;
+
+  width: 100%;
+  padding: 8rem 0;
+
+  .c-devices {
+    transform: translateX(-4rem);
+  }
+}

@@ -1,0 +1,7 @@
+@use "../base/extends";
+
+.l-buttons {
+  @extend %u-display-flex, %u-justify-space-between;
+
+  width: 45rem;
+}

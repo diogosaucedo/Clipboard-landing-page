@@ -1,0 +1,11 @@
+@use "../base/extends";
+
+.l-header {
+  @extend %u-display-flex,
+    %u-direction-column,
+    %u-justify-space-around,
+    %u-align-center;
+
+  min-height: 70rem;
+  padding: 10rem 0;
+}

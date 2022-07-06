@@ -1,0 +1,25 @@
+@use "../base/colors";
+@use "../base/extends";
+
+.c-social-networks {
+  @extend %u-display-flex, %u-justify-space-between, %u-align-center;
+
+  min-width: 12rem;
+  height: 100%;
+
+  font-size: 3rem;
+
+  &__link {
+    text-decoration: none;
+    color: colors.$dark-grayish-blue;
+    &:visited {
+      color: colors.$dark-grayish-blue;
+    }
+  }
+
+  &__item {
+    &:active {
+      color: colors.$strong-cyan;
+    }
+  }
+}

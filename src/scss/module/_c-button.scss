@@ -1,0 +1,22 @@
+@use "../base/extends";
+@use "../base/colors";
+
+.c-button {
+  min-width: 21.5rem;
+  height: 5rem;
+  border-radius: 3rem;
+
+  border: none;
+  color: colors.$white;
+  font-size: 1.8rem;
+  box-shadow: 0 0 0.6rem colors.$dark-grayish-blue;
+  cursor: pointer;
+}
+
+.c-button-1 {
+  background-color: colors.$strong-cyan;
+}
+
+.c-button-2 {
+  background-color: colors.$light-blue;
+}

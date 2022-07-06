@@ -1,0 +1,92 @@
+@media only screen and (max-width: 456px) {
+  body {
+    background-image: url(../../../assets/images/bg-header-mobile.png);
+  }
+
+  .l-header {
+    height: fit-content;
+  }
+
+  .c-logo {
+    padding-bottom: 6rem;
+  }
+
+  .c-section {
+    max-width: 31rem;
+    padding: 0;
+
+    &__title-1 {
+      font-size: 3.1rem;
+    }
+
+    &__title-2 {
+      font-size: 3rem;
+    }
+
+    &__title-3 {
+      font-size: 2.4rem;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+    }
+  }
+
+  .l-buttons {
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 12rem;
+    max-width: 31rem;
+  }
+
+  .c-button {
+    width: 100%;
+  }
+
+  .l-main {
+    .c-devices {
+      margin: 5rem 0;
+    }
+  }
+
+  .l-features {
+    padding: 0;
+  }
+
+  .l-companies {
+    padding: 8rem 0;
+  }
+
+  .l-footer {
+    flex-direction: column;
+    align-items: center;
+
+    &__left {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      width: 100%;
+      height: fit-content;
+    }
+    .c-logo {
+      padding: 0;
+    }
+  }
+
+  .c-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+
+    &__item {
+      text-align: center;
+      padding: 1rem 0;
+    }
+  }
+
+  .c-social-networks {
+    width: 15rem;
+  }
+}

@@ -1,0 +1,44 @@
+@use "../base/extends";
+@use "../base/colors";
+@use "../base/mixins";
+
+.c-section {
+  @extend %u-display-flex,
+    %u-direction-column,
+    %u-justify-space-around,
+    %u-align-center;
+
+  &__icon {
+    @extend %u-display-flex, %u-align-center, %u-justify-center;
+    height: 10rem;
+  }
+
+  &__title-1 {
+    @include mixins.custom-font(4.5rem, 600, colors.$dark-grayish-blue);
+  }
+
+  &__title-2 {
+    @include mixins.custom-font(3.6rem, 600, colors.$dark-grayish-blue);
+  }
+
+  &__title-3 {
+    @include mixins.custom-font(2.4rem, 600, colors.$dark-grayish-blue);
+    &--left {
+      align-self: flex-start;
+    }
+  }
+
+  &__text {
+    @include mixins.custom-font(1.9rem, 400, colors.$dark-grayish-blue);
+
+    max-width: 70rem;
+    padding: 2rem 0;
+    
+    text-align: center;
+    line-height: 3rem;
+
+    &--left {
+      text-align: left;
+    }
+  }
+}

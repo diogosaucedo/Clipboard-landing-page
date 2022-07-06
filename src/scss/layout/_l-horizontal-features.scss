@@ -1,0 +1,13 @@
+@use "../base/extends";
+
+.l-horizontal-features {
+  @extend %u-display-flex, %u-justify-center;
+
+  width: 100%;
+  padding: 4rem 0;
+
+  .c-section {
+    @extend %u-justify-start;
+    width: 40rem;
+  }
+}
